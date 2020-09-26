@@ -62,3 +62,20 @@ Second_Yr=float(First_Yr+0.04*First_Yr/1)
 Third_Yr=float(Second_Yr+0.04*Second_Yr/1)
 print(f"Total balance after 1yrs: {First_Yr}\nTotal balance after 2Yrs: {Second_Yr}\n"
       f"Total balance after 3Yrs:{Third_Yr}")
+
+###Q10:-Airthmetic
+a=int(input("Enter the value of a :-"))
+b=int(input("Enter the value of b:-"))
+import math
+sum=a+b
+sub=b-a
+product=a*b
+quotient=a//b
+reminder=a%b
+Log=math.log10(a)
+print(f"Sum of the numbers:{sum}\nSubtraction of numbers:{sub}\n"
+      f"Product of numbers:{product}\nQuotient of numbers:{quotient}\n"
+      f"Reminders of numbers:{reminder}\nLog10(a):{Log}\nab of the number:{product}")
+
+
+
