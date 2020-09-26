@@ -1,0 +1,64 @@
+###Q1:-Mailing address
+sending="To,\n Madan Mohan Pradhan \n Plot BE86,Lane-7 \n Bhubaneswar ,Odisha \n PIN-751010 \n"
+Return="If undelivered,Please retrun to :- \n James Chandler \n California, USA \n"
+print(sending)
+print(Return)
+
+###Q2:-Hello
+Username=input("Enter your name ? \n:- ")
+print(f"Hello {Username} !")
+
+###Q3:- Area of Room
+length=float(input("Enter length of the room in meters? \n:- "))
+width=float(input("Enter width of the room in meters? \n:-"))
+area=float(length*width)
+print(f"Area of the {area} meters !")
+
+###Q4:-Area of field
+length=float(input("Enter length of the field in feets? \n:- "))
+width=float(input("Enter width of the field in feets? \n:-"))
+Field_area=float((length*width)/43560)
+print(f"Area of the {Field_area} acres !")
+
+###Q5:- Bottle deposites
+#1Litle or less litre Container as Small value $0.10
+#More than 1litre container Big value $0.25
+Small=int(input("Enter how many Small container deposited?If none Enter 0 \n:-"))
+Big=int(input("Enter how many Big container deposited?If none Enter 0 \n:-"))
+Small=float(Small*0.10)
+Big=float(Big*0.25)
+Total_refund=float(Small+Big)
+print(f"${Total_refund}")
+
+###Q6:-Tax & Tip
+###Local Tax 15%
+###Tips is 18% of actual meal amount
+meal=float(input("Enter the value of meals ordered?\n:-"))
+Local_Tax=float(15/100)
+Taxed_meal=float(meal*Local_Tax)
+Tips=float((18/100)*meal)
+Total_price=float(Taxed_meal+Tips+meal)
+print(f" Total meal price is:- {meal}\n Local GST:- {Taxed_meal}\n Tips for the meal:- {Tips}\n "
+      f"Grand Total:-{Total_price}")
+
+###Q7:- Sum of first n positive integer
+n=int(input("Enter the value of positive interger n \n:"))
+Sum=((n*n+n)/2)
+print(f"Sum of all positive integer :{Sum}")
+
+###Q8:-Widgets & Gizmos
+###Widgets=75grams
+###Gizmos=112grams
+Widgets=int(input("Enter the number of Widgets:-"))
+Gizmos=int(input("Enter the number of Gizmos:-"))
+Total_Weights=float(((Widgets*75)+(Gizmos*112))/1000)
+print(f"Total weights of Widgets & Gizmos : {Total_Weights}kg")
+
+###Q9:- Compound Interest
+###4% interest rate per year
+Deposit=float(input("Enter the amount available :-"))
+First_Yr=float(Deposit+0.04*Deposit/1)
+Second_Yr=float(First_Yr+0.04*First_Yr/1)
+Third_Yr=float(Second_Yr+0.04*Second_Yr/1)
+print(f"Total balance after 1yrs: {First_Yr}\nTotal balance after 2Yrs: {Second_Yr}\n"
+      f"Total balance after 3Yrs:{Third_Yr}")
